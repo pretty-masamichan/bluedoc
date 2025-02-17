@@ -1,0 +1,7 @@
+{
+  auto_https off
+}
+
+redis.localhost {
+  reverse_proxy redis:6379
+}

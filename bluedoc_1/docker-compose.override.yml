@@ -1,0 +1,4 @@
+services:
+  app:
+    environment:
+      BUNDLE_JOBS: 4
