@@ -15,6 +15,10 @@ RUN mkdir -p /home/app && \
 
 COPY Gemfile Gemfile.lock package.json yarn.lock /home/app/bluedoc/
 
+COPY bin/docker-entrypoint /home/app/bluedoc/bin/docker-entrypoint
+RUN chmod +x /home/app/bluedoc/bin/docker-entrypoint
+
+
 # `apk` を使って nodejs, yarn をインストール
 RUN apk add --no-cache nodejs npm yarn
 

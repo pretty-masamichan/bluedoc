@@ -8,7 +8,7 @@ services:
     depends_on:
       - postgres  # ← "db" ではなく "postgres" に修正
     environment:
-      DATABASE_URL: "postgres://postgres:password@postgres:5432/myapp_development"
+      DATABASE_URL: "postgres://postgres:password@postgres:5432/masami_development"
 
     entrypoint: ["/home/app/bluedoc/bin/docker-entrypoint"]
 
